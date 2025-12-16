@@ -1,1 +1,3 @@
-# vulcan
+# Vulcan - Enterprise-Grade DevOps Full-Stack Delivery Platform
+
+Named after the Roman god of fire and forging, Vulcan is dedicated to becoming the powerful engine of enterprise software delivery. It unifies the entire lifecycle—from code commit, continuous integration, security scanning, artifact management to automated deployment—delivering a stable and efficient "forging" process. Through standardized, automated pipelines, Vulcan helps enterprises build a robust and reliable delivery foundation, ensuring every release is as precise and dependable as a divine artifact emerging from the forge.
