@@ -250,8 +250,6 @@ func (e *TaskExecutor) ExecuteTaskChain(ctx context.Context, planID int64) error
         return e.executeCheckImage(ctx, plan)
     case constant.StepPushBranch:
         return e.executePushBranch(ctx, plan)
-    case constant.StepPushKOS:
-        return e.executePushKOS(ctx, plan)
     // ... 其他步骤
     }
     
@@ -289,13 +287,6 @@ func (e *TaskExecutor) executeCheckImage(ctx context.Context, plan *model.Plan) 
 // 推送分支
 func (e *TaskExecutor) executePushBranch(ctx context.Context, plan *model.Plan) error {
     // 推送配置文件到 GitLab
-    // 更新状态
-}
-
-// 推送 KOS
-func (e *TaskExecutor) executePushKOS(ctx context.Context, plan *model.Plan) error {
-    // 上传版本号到 KOS
-    // 等待升级结果
     // 更新状态
 }
 ```
@@ -615,7 +606,7 @@ CMD ["./vulcan"]
 1. 认证授权模块（高优先级）
 2. 版本计划管理（高优先级）
 3. 任务执行链（核心功能）
-4. 外部服务集成（GitLab、Harbor、KOS）
+4. 外部服务集成（GitLab、Harbor）
 5. 通知系统（飞书、邮件）
 6. 前端界面重构
 
